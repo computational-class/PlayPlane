@@ -12,10 +12,10 @@ class Bullet(pygame.sprite.Sprite):
 
     def __init__(self, position):
         super(Bullet, self).__init__()
-        self.image = pygame.image.load("material/image/bullet1.png")
+        self.image = pygame.image.load("material/image/bullet_sword.png")
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = position
-        self.speed = 30
+        self.speed = 60
         self.active = True
         self.mask = pygame.mask.from_surface(self.image)
 
